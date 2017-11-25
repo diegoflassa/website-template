@@ -2,6 +2,9 @@
 
 Project description.
 
+http://appcropolis.com/blog/web-technology/organize-html-css-javascript-files/
+
+
 See our other [Google Cloud Platform github
 repos](https://github.com/GoogleCloudPlatform) for sample applications and
 scaffolding for other frameworks and use cases.
