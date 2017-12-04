@@ -11,9 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A description of the page" />
   <meta name="google-site-verification" content="YOUR_CODE" />
-  <!-- NOT USED meta name="robots" content="..., ..." /-->
-  <!-- NOT USED meta name="googlebot" content="..., ..." /-->
-  <!-- NOT USED meta name="google" content="nositelinkssearchbox" /-->
+  <meta name="robots" content="index, follow"/>
+  <meta name="googlebot" content="index, follow"/>
+  <!-- <NOT USED meta name="google" content="nositelinkssearchbox"/> -->
 
   <!-- Amp -->
   <!-- Canonical link to the "amp" page -->
@@ -97,6 +97,14 @@
       easter_egg.code = function () { myEasterEgg(); };
       easter_egg.load();
       console.log("Konami code included  :-)");
+
+      messageResource.init({filePath : './resources/data/'});
+      messageResource.load('settings');
+      var uaId = messageResource.get('google.ua', 'settings', 'UNDEFINED');
+      var gtmId = messageResource.get('google.gtm', 'settings', 'UNDEFINED');
+
+      console.log("Got UA id: " + uaId);
+      console.log("Got GTM id: " + gtmId);
     }
 
     function myEasterEgg() {
