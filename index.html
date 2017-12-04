@@ -5,7 +5,7 @@
 
 <head>
   <!-- Title & Metadata -->
-  <title>Your Site</title>
+  <title>Website Template</title>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,10 @@
   <!-- NOT USED meta name="robots" content="..., ..." /-->
   <!-- NOT USED meta name="googlebot" content="..., ..." /-->
   <!-- NOT USED meta name="google" content="nositelinkssearchbox" /-->
+
+  <!-- Amp -->
+  <!-- Canonical link to the "amp" page -->
+  <link rel="amphtml" href="./index.amp.html">
 
   <!-- Icons -->
   <!-- Use https://realfavicongenerator.net to generate and check the icons and tags-->
@@ -30,6 +34,7 @@
 
   <!-- CSSs -->
   <link rel="stylesheet" href="./resources/css/main.css" />
+  <link rel="stylesheet" href="./vendors/progressive-image/css/progressive-image.css">
 
   <!-- Google Analytics -->
   <script>
@@ -72,6 +77,9 @@
     <div id="header-wrapper">
     </div>
     <div id="main">
+      <a href="./resources/images/site-structure.png" class="progressive replace">
+        <img src="./resources/images/site-structure-tiny.png" class="preview" alt="image" />
+      </a>
     </div>
     <!-- Footer -->
     <div id="footer-wrapper">
@@ -79,7 +87,7 @@
   </div>
 
 
-  <!-- Scripts? Inline -->
+  <!-- Scripts: Inline -->
   <!-- -->
 
   <script>
@@ -107,7 +115,9 @@
   <!-- Scripts: Vendors -->
 
   <script src="./vendors/snaptortoise-konami-js-1.4.7/konami.js"></script>
-  <script src="./vendors/jquery-2.3.1/jquery-2.3.1.js"></script>
+  <script src="./vendors/jquery-3.2.1/jquery-3.2.1.js"></script>
+  <script src="./vendors/messageresources-1.1/messageResource.js"></script>
+  <script src="./vendors/progressive-image/js/progressive-image.js"></script>
 </body>
 
 </html>
