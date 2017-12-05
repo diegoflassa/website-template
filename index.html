@@ -11,8 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A description of the page" />
   <meta name="google-site-verification" content="YOUR_CODE" />
-  <meta name="robots" content="index, follow"/>
-  <meta name="googlebot" content="index, follow"/>
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
   <!-- <NOT USED meta name="google" content="nositelinkssearchbox"/> -->
 
   <!-- Amp -->
@@ -84,20 +84,18 @@
         <h1>Diego Felipe Lassa</h1>
         <p>Senior Software Developer</p>
       </header>
+
       <section id="main">
         <a href="./resources/images/site-structure.png" class="progressive replace">
           <img src="./resources/images/site-structure-tiny.png" class="preview" alt="image" />
         </a>
       </section>
 
-
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="copyright">
-        <li>&copy; Diego Felipe Lassa</li>
-      </ul>
-    </footer>
-
+      <footer>
+        <ul class="copyright">
+          <li>&copy; Diego Felipe Lassa</li>
+        </ul>
+      </footer>
   </div>
 
 
@@ -112,7 +110,7 @@
       easter_egg.load();
       console.log("Konami code included  :-)");
 
-      messageResource.init({filePath : './resources/data/'});
+      messageResource.init({ filePath: './resources/data/' });
       messageResource.load('settings');
       var uaId = messageResource.get('google.ua', 'settings', 'UNDEFINED');
       var gtmId = messageResource.get('google.gtm', 'settings', 'UNDEFINED');
